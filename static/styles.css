@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    /* Aumentado para mejor usabilidad */
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    /* Bordes más suaves */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    transition: border-color 0.3s ease-in-out;
+    /* Suave transición de borde */
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #80bdff;
+    /* Color de borde en foco */
+    outline: none;
+    /* Remover el outline en foco */
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+    /* Sombra en foco */
+}
+
+.form-group input[type="submit"],
+.form-group button:not(.btn-danger) {
+    background-color: #007bff;
+    /* Color primario Bootstrap */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-group input[type="submit"]:hover,
+.form-group button:not(.btn-danger):hover {
+    background-color: #0056b3;
+    /* Color de hover más oscuro */
+}
+
+.form-group input[type="submit"]:hover,
+.form-group button:hover {
+    background-color: #0056b3;
+    /* Color de hover más oscuro */
+}
+
+.inline-form {
+    display: inline;
+}
+
+
+/* Estilos para las alertas */
+
+.alert {
+    position: relative;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .375rem;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Añadida sombra */
+}
+
+.alert-dismissible {
+    padding-right: 3rem;
+}
+
+.alert-dismissible .btn-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 1;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
